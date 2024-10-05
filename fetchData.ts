@@ -6,7 +6,6 @@ async function fetchPets() {
     const data = await response.json();
     console.log("Полученные данные:", data);
 
-    // Обработка данных
     data.forEach((pet: any) => {
       console.log(
         `ID: ${pet.id}, Name: ${pet.name}, Category: ${pet.category.name}, Status: ${pet.status}`
